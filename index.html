@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LastMeal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#"> <img src="images/icon.png" /></a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#order">Order</a>
+        <a href="#answer">Answer</a>
+      </nav>
+    </header>
+
+    <section class="banner" id="home">
+      <img src="images/background1.png" />
+      <div class="content">
+        <h3>
+          The Restaurant<br /><span>At The End</span><br />Of The Universe
+        </h3>
+        <a href="#" class="btn">And Thx For The Fish ;)</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <img src="images/background2.png" />
+      <div class="content">
+        <h3>What is LastMeal?</h3>
+        <p>
+          LastMeal is a restaurant literally at the end of the universe, where
+          you will experience the best food you could ever have in your entire
+          life. as part of the show, you will see the entire universe passing
+          through your eyes in a spectacular show created by LM production,
+          meanwhile, you will be eating your meal with one of the most
+          delightful experiences that the universe could've ever provided you.
+          Something very important to notice is that whenever you try this food,
+          the answer to life, the universe and everything is part of one of the
+          main ingredients of the food, leading to a very plesurable and
+          unforgetful experience.
+        </p>
+        <span>Then You Die</span>
+      </div>
+    </section>
+
+    <section class="menu" id="menu">
+      <img src="images/background 5.png" />
+      <div class="content">
+        <h3>Our Menu</h3>
+        <p>
+          Our menu is composed of three meals, all of them as flavourly as they
+          can be, we chose to have only three of them in order to maintain the
+          quality and improve molecularly in the most important points of our
+          food, if you will, try to have all of em, but don't forget about the
+          time, it's almost at it's end ;)
+        </p>
+      </div>
+      <div class="container">
+        <div class="serviceBx">
+          <div class="imgBx">
+            <img src="images/meal2.png" />
+          </div>
+          <h3>BigBang</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            ex iusto, quas tenetur numquam iure reiciendis assumenda ipsa
+            blanditiis molestiae nostrum voluptate voluptas officia aut deleniti
+            distinctio perferendis a. Incidunt!
+          </p>
+        </div>
+        <div class="serviceBx">
+          <div class="imgBx">
+            <img src="images/meal3.png" />
+          </div>
+          <h3>BlackHole</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            ex iusto, quas tenetur numquam iure reiciendis assumenda ipsa
+            blanditiis molestiae nostrum voluptate voluptas officia aut deleniti
+            distinctio perferendis a. Incidunt!
+          </p>
+        </div>
+        <div class="serviceBx">
+          <div class="imgBx">
+            <img src="images/meal1.png" />
+          </div>
+          <h3>Singularity</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+            ex iusto, quas tenetur numquam iure reiciendis assumenda ipsa
+            blanditiis molestiae nostrum voluptate voluptas officia aut deleniti
+            distinctio perferendis a. Incidunt!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="order" id="order">
+      <img src="images/background 7.jpg" />
+    </section>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
+  </body>
+</html>
