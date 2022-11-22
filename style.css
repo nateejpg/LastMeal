@@ -17,40 +17,57 @@
 body {
   background-color: #13131a;
   width: 100%;
+  height: 100%;
 }
 
 header {
   position: fixed;
-  z-index: 999999;
   width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 0 40px;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 10000;
+}
+
+header::before {
+  position: fixed;
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
   background-color: var(--main-color);
+  opacity: 0.7;
 }
 
 header .logo img {
+  position: relative;
   width: 7rem;
+  height: 8rem;
   filter: invert(1);
+  z-index: 1000000;
 }
 
 header .navbar {
   position: relative;
-  z-index: 999999;
   padding-left: 35rem;
   text-align: center;
+  z-index: 10000;
+  color: #fff;
 }
 
 header .navbar a {
-  z-index: 999999;
+  position: relative;
   font-size: 1.5rem;
   color: #fff;
   margin: 0 1rem;
   cursor: pointer;
+  z-index: 1000;
 }
 
 header .navbar a:hover {
@@ -58,16 +75,23 @@ header .navbar a:hover {
   transition: 0.9s;
 }
 
-header.sticky {
-  z-index: 10000;
-  letter-spacing: 1px;
+header.sticky::before {
   transition: 0.4s;
-  background-color: transparent;
   border: none;
+  background: none;
+  z-index: 100000;
+}
+
+header.sticky .navbar {
+  letter-spacing: 2px;
+  transition: 0.5s;
+  z-index: 1000000;
+  padding-right: 20px;
 }
 
 header.sticky .logo img {
   width: 8rem;
+  height: 9rem;
   transition: 0.5s;
 }
 
@@ -80,10 +104,16 @@ header.sticky .logo img {
   height: 100vh;
 }
 
-.banner img {
+.banner::before {
+  content: "";
   position: absolute;
-  opacity: 0.2;
-  height: 100vh;
+  background-image: url(images/background1.png);
+  background-size: cover;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 
 .banner .content {
@@ -118,19 +148,27 @@ header.sticky .logo img {
 }
 
 .about {
+  position: relative;
   height: 100vh;
   width: 100%;
   display: flex;
   text-align: center;
 }
 
-.about img {
+.about::before {
+  content: "";
+  background-image: url(images/background2.png);
+  background-size: cover;
   position: absolute;
-  opacity: 0.1;
-  height: 100vh;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  opacity: 0.5;
 }
 
 .about .content {
+  position: relative;
   padding: 300px 200px;
   z-index: 1000;
 }
@@ -154,22 +192,29 @@ header.sticky .logo img {
 }
 
 .menu {
-  height: 100%;
+  position: relative;
+  height: 100vh;
   width: 100%;
 }
 
-.menu img {
+.menu::before {
   position: absolute;
-  opacity: 0.4;
+  content: "";
+  background-image: url(images/background\ 3.jpg);
   background-size: cover;
+  opacity: 0.5;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 
 .menu .content {
   position: relative;
-  padding: 100px 0px;
   text-align: center;
+  padding-bottom: 50px;
+  padding-top: 30px;
 }
-
 .menu .content h3 {
   font-size: 5rem;
   color: #fff;
@@ -179,64 +224,259 @@ header.sticky .logo img {
   position: relative;
   font-size: 1.8rem;
   color: #fff;
+  text-align: center;
   width: 50%;
-  margin-left: 470px;
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin-left: 25%;
 }
-
 .menu .container {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 100%;
 }
 .menu .container .serviceBx {
   position: relative;
   background-color: #fff;
-  width: 300px;
-  height: 600px;
-  padding: 0px 125px;
+  padding: 0px 10px;
   display: grid;
   align-items: center;
   justify-content: center;
   border-radius: 15px;
   text-align: center;
   cursor: pointer;
+  margin-top: 0px;
+  height: 500px;
+  width: 400px;
 }
-
+.menu .container .serviceBx h3 {
+  font-size: 2rem;
+}
+.menu .container .serviceBx p {
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+}
 .menu .container .serviceBx:hover {
   background-color: var(--blue);
   transition: 0.9s;
 }
-
 .menu .container .serviceBx .imgBx {
-  display: flex;
   margin-left: 30px;
 }
-
 .menu .container .serviceBx .imgBx img {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.menu .container .serviceBx .imgBx img:hover {
   width: 250px;
   height: 250px;
-  background-image: none;
+  transition: 0.5s;
 }
 
-.menu .container .serviceBx h3 {
-  font-size: 1.8rem;
-  margin-top: 250px;
-}
-
-.menu .container .serviceBx p {
-  font-size: 1.5rem;
-}
-
-.class {
+.chiefs {
+  position: relative;
+  height: 100vh;
   width: 100%;
-  height: 100%;
 }
 
-.class .img {
+.chiefs::before {
+  content: "";
   position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: url(images/background\ 4.png);
   background-size: cover;
   opacity: 0.5;
+}
+
+.chiefs .content {
+  position: relative;
+  text-align: center;
+}
+
+.chiefs .content h3 {
+  padding-top: 50px;
+  font-size: 5rem;
+  color: #fff;
+}
+.chiefs .content p {
+  font-size: 1.8rem;
+  color: #fff;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.chiefs .container {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.chiefs .container .chiefBx1 {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+  z-index: 10000;
+  margin: 0px 10px;
+}
+
+.chiefs .container .chiefBx1::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-color: var(--black);
+  background-image: url(images/c2.jpg);
+  background-position: center;
+  border-radius: 7rem;
+}
+
+.chiefs .container .chiefBx1 h3 {
+  color: transparent;
+}
+
+.chiefs .container .chiefBx1 p {
+  color: transparent;
+}
+
+.chiefs .container .chiefBx1:hover {
+  transition: 0.5s;
+  z-index: 10000;
+}
+
+.chiefs .container .chiefBx1:hover h3 {
+  position: relative;
+  padding-top: 12rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.chiefs .container .chiefBx1:hover p {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 20px;
+  transition: 0.5s;
+}
+
+.chiefs .container .chiefBx2 {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+  z-index: 10000;
+  margin: 0px 10px;
+}
+
+.chiefs .container .chiefBx2::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-color: var(--black);
+  background-image: url(images/c2.jpg);
+  background-position: center;
+  border-radius: 7rem;
+}
+
+.chiefs .container .chiefBx2 h3 {
+  color: transparent;
+}
+
+.chiefs .container .chiefBx2 p {
+  color: transparent;
+}
+
+.chiefs .container .chiefBx2:hover {
+  transition: 0.5s;
+  z-index: 10000;
+}
+
+.chiefs .container .chiefBx2:hover h3 {
+  position: relative;
+  padding-top: 12rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.chiefs .container .chiefBx2:hover p {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 20px;
+  transition: 0.5s;
+}
+.chiefs .container .chiefBx3 {
+  position: relative;
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  border-radius: 20px;
+  align-items: center;
+  z-index: 10000;
+  margin: 0px 10px;
+}
+
+.chiefs .container .chiefBx3::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  background-color: var(--black);
+  background-image: url(images/c2.jpg);
+  background-position: center;
+  border-radius: 7rem;
+}
+.chiefs .container .chiefBx3 h3 {
+  color: transparent;
+}
+
+.chiefs .container .chiefBx3 p {
+  color: transparent;
+}
+
+.chiefs .container .chiefBx3:hover {
+  transition: 0.5s;
+  z-index: 10000;
+}
+
+.chiefs .container .chiefBx3:hover h3 {
+  position: relative;
+  padding-top: 12rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.chiefs .container .chiefBx3:hover p {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 20px;
+  transition: 0.5s;
 }
