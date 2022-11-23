@@ -498,3 +498,23 @@ header.sticky .logo img {
   background-size: cover;
   opacity: 0.7;
 }
+
+.contact .content {
+  position: relative;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.contact .content h3 {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.contact .content p {
+  font-size: 1.8rem;
+  color: #fff;
+  padding-top: 15px;
+  text-align: center;
+  width: 50%;
+  padding-left: 25%;
+}
