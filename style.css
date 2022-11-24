@@ -295,6 +295,7 @@ header.sticky .logo img {
 .chiefs .content {
   position: relative;
   text-align: center;
+  margin: 50px 0px;
 }
 
 .chiefs .content h3 {
@@ -320,8 +321,8 @@ header.sticky .logo img {
 
 .chiefs .container .chiefBx1 {
   position: relative;
-  width: 500px;
-  height: 600px;
+  width: 400px;
+  height: 500px;
   text-align: center;
   border-radius: 20px;
   align-items: center;
@@ -353,6 +354,8 @@ header.sticky .logo img {
 .chiefs .container .chiefBx1:hover {
   transition: 0.5s;
   z-index: 10000;
+  width: 500px;
+  height: 600px;
 }
 
 .chiefs .container .chiefBx1:hover h3 {
@@ -375,8 +378,8 @@ header.sticky .logo img {
 
 .chiefs .container .chiefBx2 {
   position: relative;
-  width: 500px;
-  height: 600px;
+  width: 400px;
+  height: 500px;
   text-align: center;
   border-radius: 20px;
   align-items: center;
@@ -408,6 +411,8 @@ header.sticky .logo img {
 .chiefs .container .chiefBx2:hover {
   transition: 0.5s;
   z-index: 10000;
+  width: 500px;
+  height: 600px;
 }
 
 .chiefs .container .chiefBx2:hover h3 {
@@ -429,8 +434,8 @@ header.sticky .logo img {
 }
 .chiefs .container .chiefBx3 {
   position: relative;
-  width: 500px;
-  height: 600px;
+  width: 400px;
+  height: 500px;
   text-align: center;
   border-radius: 20px;
   align-items: center;
@@ -461,6 +466,8 @@ header.sticky .logo img {
 .chiefs .container .chiefBx3:hover {
   transition: 0.5s;
   z-index: 10000;
+  width: 500px;
+  height: 600px;
 }
 
 .chiefs .container .chiefBx3:hover h3 {
@@ -517,4 +524,44 @@ header.sticky .logo img {
   text-align: center;
   width: 50%;
   padding-left: 25%;
+}
+
+.contact .container {
+  padding-top: 50px;
+  position: relative;
+}
+
+.contact .container .contactBx {
+  width: 50%;
+  margin: 10px 0px;
+}
+
+.contact .container .contactBx input {
+  height: 50px;
+  background-color: transparent;
+  border-bottom: 0.2rem var(--blue) solid;
+  text-decoration: none;
+}
+
+.contact .container .contactBx textarea {
+  height: 100px;
+  background-color: transparent;
+  border-bottom: 0.2rem var(--blue) solid;
+  text-decoration: none;
+}
+
+.contact .container .submitBx {
+  width: 50%;
+  align-items: center;
+  border-radius: 20px;
+}
+.contact .container .copyright {
+  padding-top: 50px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
