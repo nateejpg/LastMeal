@@ -274,13 +274,13 @@ header.sticky .logo img {
   transition: 0.5s;
 }
 
-.chiefs {
+.chefs {
   position: relative;
   height: 100vh;
   width: 100%;
 }
 
-.chiefs::before {
+.chefs::before {
   content: "";
   position: absolute;
   top: 0px;
@@ -292,18 +292,18 @@ header.sticky .logo img {
   opacity: 0.5;
 }
 
-.chiefs .content {
+.chefs .content {
   position: relative;
   text-align: center;
   padding: 50px 0px;
 }
 
-.chiefs .content h3 {
+.chefs .content h3 {
   padding-top: 0px;
   font-size: 5rem;
   color: #fff;
 }
-.chiefs .content p {
+.chefs .content p {
   font-size: 1.8rem;
   color: #fff;
   width: 50%;
@@ -312,14 +312,14 @@ header.sticky .logo img {
   padding-bottom: 15px;
 }
 
-.chiefs .container {
+.chefs .container {
   position: relative;
   text-align: center;
   display: flex;
   justify-content: space-around;
 }
 
-.chiefs .container .chiefBx1 {
+.chefs .container .chefBx1 {
   position: relative;
   width: 400px;
   height: 500px;
@@ -330,7 +330,7 @@ header.sticky .logo img {
   margin: 0px 10px;
 }
 
-.chiefs .container .chiefBx1::before {
+.chefs .container .chefBx1::before {
   content: "";
   top: 0px;
   left: 0px;
@@ -343,29 +343,29 @@ header.sticky .logo img {
   border-radius: 7rem;
 }
 
-.chiefs .container .chiefBx1 h3 {
+.chefs .container .chefBx1 h3 {
   color: transparent;
 }
 
-.chiefs .container .chiefBx1 p {
+.chefs .container .chefBx1 p {
   color: transparent;
 }
 
-.chiefs .container .chiefBx1:hover {
+.chefs .container .chefBx1:hover {
   transition: 0.5s;
   z-index: 10000;
   width: 500px;
   height: 600px;
 }
 
-.chiefs .container .chiefBx1:hover h3 {
+.chefs .container .chefBx1:hover h3 {
   position: relative;
   padding-top: 12rem;
   font-size: 1.8rem;
   color: #fff;
 }
 
-.chiefs .container .chiefBx1:hover p {
+.chefs .container .chefBx1:hover p {
   position: relative;
   text-align: center;
   font-size: 1.5rem;
@@ -376,7 +376,7 @@ header.sticky .logo img {
   transition: 0.5s;
 }
 
-.chiefs .container .chiefBx2 {
+.chefs .container .chefBx2 {
   position: relative;
   width: 400px;
   height: 500px;
@@ -387,7 +387,7 @@ header.sticky .logo img {
   margin: 0px 10px;
 }
 
-.chiefs .container .chiefBx2::before {
+.chefs .container .chefBx2::before {
   content: "";
   top: 0px;
   left: 0px;
@@ -400,29 +400,29 @@ header.sticky .logo img {
   border-radius: 7rem;
 }
 
-.chiefs .container .chiefBx2 h3 {
+.chefs .container .chefBx2 h3 {
   color: transparent;
 }
 
-.chiefs .container .chiefBx2 p {
+.chefs .container .chefBx2 p {
   color: transparent;
 }
 
-.chiefs .container .chiefBx2:hover {
+.chefs .container .chefBx2:hover {
   transition: 0.5s;
   z-index: 10000;
   width: 500px;
   height: 600px;
 }
 
-.chiefs .container .chiefBx2:hover h3 {
+.chefs .container .chefBx2:hover h3 {
   position: relative;
   padding-top: 12rem;
   font-size: 1.8rem;
   color: #fff;
 }
 
-.chiefs .container .chiefBx2:hover p {
+.chefs .container .chefBx2:hover p {
   position: relative;
   text-align: center;
   font-size: 1.5rem;
@@ -432,7 +432,7 @@ header.sticky .logo img {
   padding-bottom: 20px;
   transition: 0.5s;
 }
-.chiefs .container .chiefBx3 {
+.chefs .container .chefBx3 {
   position: relative;
   width: 400px;
   height: 500px;
@@ -443,7 +443,7 @@ header.sticky .logo img {
   margin: 0px 10px;
 }
 
-.chiefs .container .chiefBx3::before {
+.chefs .container .chefBx3::before {
   content: "";
   top: 0px;
   left: 0px;
@@ -455,29 +455,29 @@ header.sticky .logo img {
   background-position: center;
   border-radius: 7rem;
 }
-.chiefs .container .chiefBx3 h3 {
+.chefs .container .chefBx3 h3 {
   color: transparent;
 }
 
-.chiefs .container .chiefBx3 p {
+.chefs .container .chefBx3 p {
   color: transparent;
 }
 
-.chiefs .container .chiefBx3:hover {
+.chefs .container .chefBx3:hover {
   transition: 0.5s;
   z-index: 10000;
   width: 500px;
   height: 600px;
 }
 
-.chiefs .container .chiefBx3:hover h3 {
+.chefs .container .chefBx3:hover h3 {
   position: relative;
   padding-top: 12rem;
   font-size: 1.8rem;
   color: #fff;
 }
 
-.chiefs .container .chiefBx3:hover p {
+.chefs .container .chefBx3:hover p {
   position: relative;
   text-align: center;
   font-size: 1.5rem;
@@ -542,6 +542,9 @@ header.sticky .logo img {
   background-color: transparent;
   border-bottom: 0.2rem var(--blue) solid;
   text-decoration: none;
+  color: #fff;
+  outline: none;
+  font-size: 1.5rem;
 }
 
 .contact .container .contactBx textarea {
@@ -549,6 +552,9 @@ header.sticky .logo img {
   background-color: transparent;
   border-bottom: 0.2rem var(--blue) solid;
   text-decoration: none;
+  color: #fff;
+  outline: none;
+  font-size: 1.3rem;
 }
 
 .contact .container .submitBx {
@@ -604,4 +610,22 @@ header.sticky .logo img {
   font-weight: 1rem;
   display: flex;
   align-items: center;
+}
+
+@media (max-width: 991px) {
+  .header {
+    width: 100%;
+  }
+
+  .header .navbar {
+  }
+
+  .header .navbar a {
+    margin-right: 100px;
+  }
+
+  .header .logo img {
+    width: 100px;
+    height: 100px;
+  }
 }
