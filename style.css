@@ -55,7 +55,7 @@ header .logo img {
 
 header .navbar {
   position: relative;
-  padding-left: 30rem;
+  padding-left: 0rem;
   text-align: center;
   z-index: 10000;
   color: #fff;
