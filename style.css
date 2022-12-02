@@ -332,6 +332,7 @@ header.sticky .logo img {
   align-items: center;
   z-index: 10000;
   margin: 0px 10px;
+  opacity: 0.8;
 }
 
 .chefs .container .chefBx1::before {
@@ -389,6 +390,7 @@ header.sticky .logo img {
   align-items: center;
   z-index: 10000;
   margin: 0px 10px;
+  opacity: 0.8;
 }
 
 .chefs .container .chefBx2::before {
@@ -445,6 +447,7 @@ header.sticky .logo img {
   align-items: center;
   z-index: 10000;
   margin: 0px 10px;
+  opacity: 0.8;
 }
 
 .chefs .container .chefBx3::before {
@@ -642,7 +645,7 @@ header.sticky .logo img {
 
   header .navbar.active {
     position: fixed;
-    top: 100px;
+    top: 90px;
     display: block;
     width: 20%;
     height: 0px;
@@ -650,7 +653,7 @@ header.sticky .logo img {
     z-index: 100000;
     transition: 0.5s;
     align-items: center;
-    left: -49%;
+    left: 75%;
   }
 
   header .navbar:before {
@@ -665,19 +668,14 @@ header.sticky .logo img {
     margin-right: 100px;
   }
 
-  .banner {
-    width: 100%;
-    height: 100vh;
-  }
-
   header .logo img {
-    width: 5rem;
-    height: 6rem;
+    width: 3rem;
+    height: 4rem;
   }
 
   header.sticky .logo img {
-    width: 6rem;
-    height: 7rem;
+    width: 4rem;
+    height: 5rem;
     transition: 0.5s;
   }
 
@@ -697,9 +695,11 @@ header.sticky .logo img {
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
+    z-index: 100000;
   }
 
   .toggle.active {
+    z-index: 10000;
     background-image: url(images/close.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -713,6 +713,12 @@ header.sticky .logo img {
     right: 0;
     left: 0;
     bottom: 0;
+  }
+
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
   }
 
   .banner::before {
@@ -740,7 +746,11 @@ header.sticky .logo img {
 
   .about {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .about::before {
@@ -760,7 +770,7 @@ header.sticky .logo img {
 
   .about .content {
     position: relative;
-    padding: 200px 0px;
+    padding: 0px;
     z-index: 1000;
   }
 
@@ -802,7 +812,7 @@ header.sticky .logo img {
     width: 100px;
     height: 100px;
     margin-top: 10px;
-    margin-right: 30px;
+    margin-right: 50px;
   }
 
   .menu .container .serviceBx .imgBx img:hover {
@@ -855,67 +865,93 @@ header.sticky .logo img {
 
   .chefs .container .chefBx1 {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 250px;
     margin-bottom: 20px;
+    border-radius: 0rem;
   }
 
   .chefs .container .chefBx1:hover {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 200px;
+    height: 250px;
+    border-radius: 0;
+  }
+
+  .chefs .container .chefBx1::before {
+    border-radius: 0.5rem;
+    opacity: 0.8;
   }
 
   .chefs .container .chefBx1:hover h3 {
-    font-size: 1.4rem;
-    padding-top: 8rem;
+    font-size: 1rem;
+    padding-top: 0;
+    padding-bottom: 10px;
   }
 
   .chefs .container .chefBx1:hover p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .chefs .container .chefBx2 {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 250px;
     margin-bottom: 20px;
+    border-radius: 0rem;
   }
 
   .chefs .container .chefBx2:hover {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 200px;
+    height: 250px;
+    border-radius: 0;
+  }
+
+  .chefs .container .chefBx2::before {
+    border-radius: 0.5rem;
+    opacity: 0.8;
   }
 
   .chefs .container .chefBx2:hover h3 {
-    font-size: 1.4rem;
-    padding-top: 8rem;
+    position: relative;
+    font-size: 1rem;
+    padding-top: 0;
+    padding-bottom: 10px;
   }
 
   .chefs .container .chefBx2:hover p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .chefs .container .chefBx3 {
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 250px;
     margin-bottom: 20px;
+    border-radius: 0rem;
   }
 
   .chefs .container .chefBx3:hover {
     position: relative;
-    width: 400px;
-    height: 500px;
+    width: 200px;
+    height: 250px;
+    border-radius: 0;
   }
+
+  .chefs .container .chefBx3::before {
+    border-radius: 0.5rem;
+    opacity: 0.8;
+  }
+
   .chefs .container .chefBx3:hover h3 {
-    font-size: 1.4rem;
-    padding-top: 8rem;
+    font-size: 1rem;
+    padding-top: 0;
+    padding-bottom: 10px;
   }
 
   .chefs .container .chefBx3:hover p {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .contact {
@@ -928,7 +964,7 @@ header.sticky .logo img {
   }
 
   .contact .content p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding-left: 0;
     width: 100%;
   }
@@ -942,7 +978,7 @@ header.sticky .logo img {
   }
 
   .contact .content h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     padding-bottom: 10px;
   }
   .contact .container .links img {
@@ -975,5 +1011,6 @@ header.sticky .logo img {
     justify-content: center;
     width: 100%;
     padding-left: 0;
+    font-size: 1rem;
   }
 }
