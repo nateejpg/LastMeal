@@ -55,17 +55,21 @@ header .logo img {
 
 header .navbar {
   position: relative;
-  padding-left: 35rem;
+  padding-left: 30rem;
   text-align: center;
   z-index: 10000;
   color: #fff;
+}
+
+header .navbar img {
+  display: none;
 }
 
 header .navbar a {
   position: relative;
   font-size: 1.5rem;
   color: #fff;
-  margin: 0 1rem;
+  margin: 10px;
   cursor: pointer;
   z-index: 1000;
 }
@@ -596,12 +600,6 @@ header.sticky .logo img {
   cursor: pointer;
 }
 
-.contact .container .links img:hover {
-  transition: 0.5s;
-  width: 110px;
-  height: 110px;
-}
-
 .contact .copyright {
   position: relative;
   padding-top: 20px;
@@ -630,8 +628,38 @@ header.sticky .logo img {
     width: 100%;
   }
   header .navbar {
-    padding-right: 100px;
-    padding-left: 0px;
+    position: fixed;
+    top: 100px;
+    width: 20%;
+    height: 0px;
+    text-align: center;
+    z-index: 100000;
+    transition: 0.5s;
+    align-items: center;
+    display: none;
+    left: -100%;
+  }
+
+  header .navbar.active {
+    position: fixed;
+    top: 100px;
+    display: block;
+    width: 20%;
+    height: 0px;
+    text-align: center;
+    z-index: 100000;
+    transition: 0.5s;
+    align-items: center;
+    left: -49%;
+  }
+
+  header .navbar:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
   }
   .header .navbar a {
     margin-right: 100px;
@@ -647,27 +675,67 @@ header.sticky .logo img {
     height: 6rem;
   }
 
+  header.sticky .logo img {
+    width: 6rem;
+    height: 7rem;
+    transition: 0.5s;
+  }
+
+  header .navbar img {
+    display: flex;
+    width: 5rem;
+    color: transparent;
+  }
+
+  .toggle {
+    position: fixed;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    margin-right: 2rem;
+    background-image: url(images/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .toggle.active {
+    background-image: url(images/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+
+  .toggle::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+
   .banner::before {
     background-position: center;
   }
 
   .banner .content h3 {
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 30px 0px;
   }
 
   .banner .content span {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .btn {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
   .btn:hover {
-    font-size: 1.5rem;
-    letter-spacing: 2px;
+    font-size: 1rem;
+    letter-spacing: 1.5px;
   }
 
   .about {
@@ -680,7 +748,7 @@ header.sticky .logo img {
   }
 
   .about .content h3 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .about .content p {
@@ -700,10 +768,36 @@ header.sticky .logo img {
     width: 100%;
     height: 100%;
   }
+
   .menu .container .serviceBx {
     height: 300px;
     width: 100px;
   }
+
+  .menu .content h3 {
+    padding-top: 10px;
+    font-size: 3rem;
+    color: #fff;
+  }
+
+  .menu .content p {
+    font-size: 1rem;
+  }
+
+  .menu .container {
+    display: grid;
+  }
+
+  .menu .container .serviceBx {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .menu .container .serviceBx h3 {
+    font-size: 1rem;
+  }
+
   .menu .container .serviceBx .imgBx img {
     width: 100px;
     height: 100px;
@@ -711,17 +805,117 @@ header.sticky .logo img {
     margin-right: 30px;
   }
 
-  .menu .container .serviceBx h3 {
-    font-size: 1rem;
+  .menu .container .serviceBx .imgBx img:hover {
+    width: 100px;
+    height: 100px;
+    transition: 0;
   }
 
-  .menu .container .serviceBx .imgBx {
-    margin-left: 0px;
+  .menu .container .serviceBx p {
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+
+  .menu .content p {
+    position: relative;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-left: 0;
   }
 
   .chefs {
     width: 100%;
     height: 100%;
+  }
+
+  .chefs::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-position: center;
+  }
+
+  .chefs .content h3 {
+    font-size: 3rem;
+    padding-bottom: 15px;
+  }
+
+  .chefs .content p {
+    font-size: 1.2rem;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .chefs .container {
+    display: grid;
+  }
+
+  .chefs .container .chefBx1 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .chefs .container .chefBx1:hover {
+    position: relative;
+    width: 400px;
+    height: 500px;
+  }
+
+  .chefs .container .chefBx1:hover h3 {
+    font-size: 1.4rem;
+    padding-top: 8rem;
+  }
+
+  .chefs .container .chefBx1:hover p {
+    font-size: 1rem;
+  }
+
+  .chefs .container .chefBx2 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .chefs .container .chefBx2:hover {
+    position: relative;
+    width: 400px;
+    height: 500px;
+  }
+
+  .chefs .container .chefBx2:hover h3 {
+    font-size: 1.4rem;
+    padding-top: 8rem;
+  }
+
+  .chefs .container .chefBx2:hover p {
+    font-size: 1rem;
+  }
+
+  .chefs .container .chefBx3 {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .chefs .container .chefBx3:hover {
+    position: relative;
+    width: 400px;
+    height: 500px;
+  }
+  .chefs .container .chefBx3:hover h3 {
+    font-size: 1.4rem;
+    padding-top: 8rem;
+  }
+
+  .chefs .container .chefBx3:hover p {
+    font-size: 1rem;
   }
 
   .contact {
@@ -741,17 +935,19 @@ header.sticky .logo img {
 
   .contact .container .links .linksBx {
     width: 25%;
-    padding-left: 40%;
     display: flex;
     padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
   }
 
   .contact .content h3 {
-    font-size: 4rem;
+    font-size: 3rem;
+    padding-bottom: 10px;
   }
   .contact .container .links img {
-    width: 40px;
-    height: 50px;
+    width: 3rem;
+    height: 3rem;
   }
 
   .contact .container .contactBx input {
@@ -765,10 +961,19 @@ header.sticky .logo img {
   }
 
   .contact .container .submitBx {
-    padding-bottom: 15px;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
 
   .contact .container .submitBx input {
     height: 25px;
+  }
+  .contact .copyright {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0;
   }
 }
