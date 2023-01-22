@@ -564,6 +564,10 @@ header.sticky .logo img {
   font-size: 1.3rem;
 }
 
+.contactBx ::placeholder {
+  color: #fff;
+}
+
 .contact .container .submitBx {
   width: 50%;
   align-items: center;
@@ -644,16 +648,23 @@ header.sticky .logo img {
   }
 
   header .navbar.active {
-    position: fixed;
-    top: 90px;
+    position: absolute;
     display: block;
-    width: 20%;
-    height: 0px;
+    justify-content: center;
+    width: 72%;
+    height: 250px;
+    padding: 100px;
     text-align: center;
-    z-index: 100000;
+    z-index: 10000000;
     transition: 0.5s;
     align-items: center;
-    left: 75%;
+    background-color: #fff;
+    left: 0;
+  }
+
+  header .navbar.active a {
+    color: #000;
+    font-size: 3rem;
   }
 
   header .navbar:before {
@@ -699,7 +710,7 @@ header.sticky .logo img {
   }
 
   .toggle.active {
-    z-index: 10000;
+    z-index: 1000000;
     background-image: url(images/close.png);
     background-repeat: no-repeat;
     background-position: center;
