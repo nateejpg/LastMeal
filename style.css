@@ -262,7 +262,7 @@ header.sticky .logo img {
   text-align: center;
   cursor: pointer;
   margin-top: 0px;
-  height: 400px;
+  height: 350px;
   width: 400px;
   flex-direction: column;
 }
@@ -347,7 +347,7 @@ header.sticky .logo img {
 .chefs .container .chefBx1 {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 380px;
   text-align: center;
   border-radius: 20px;
   align-items: center;
@@ -408,7 +408,7 @@ header.sticky .logo img {
 .chefs .container .chefBx2 {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 380px;
   text-align: center;
   border-radius: 20px;
   align-items: center;
@@ -468,7 +468,7 @@ header.sticky .logo img {
 .chefs .container .chefBx3 {
   position: relative;
   width: 300px;
-  height: 400px;
+  height: 380px;
   text-align: center;
   border-radius: 20px;
   align-items: center;
