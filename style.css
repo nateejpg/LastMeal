@@ -687,9 +687,10 @@ header.sticky .logo img {
 
   header .navbar.active {
     position: absolute;
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    width: 72%;
+    width: 65%;
     height: 250px;
     padding: 100px;
     text-align: center;
