@@ -878,6 +878,9 @@ header.sticky .logo img {
   .menu .container .serviceBx p {
     font-size: 0.9rem;
     padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 5px 40px;
   }
 
   .menu .content p {
@@ -945,6 +948,7 @@ header.sticky .logo img {
 
   .chefs .container .chefBx1:hover p {
     font-size: 0.8rem;
+    width: 100%;
   }
 
   .chefs .container .chefBx2 {
@@ -976,6 +980,7 @@ header.sticky .logo img {
 
   .chefs .container .chefBx2:hover p {
     font-size: 0.8rem;
+    width: 100%;
   }
 
   .chefs .container .chefBx3 {
@@ -1006,6 +1011,7 @@ header.sticky .logo img {
 
   .chefs .container .chefBx3:hover p {
     font-size: 0.8rem;
+    width: 100%;
   }
 
   .contact {
