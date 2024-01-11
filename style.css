@@ -267,7 +267,7 @@ header.sticky .logo img {
   flex-direction: column;
 }
 .menu .container .serviceBx h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin: 10px;
 }
 .menu .container .serviceBx p {
@@ -280,17 +280,19 @@ header.sticky .logo img {
   transition: 0.9s;
 }
 .menu .container .serviceBx .imgBx {
-  margin-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .menu .container .serviceBx .imgBx img {
   width: 100px;
   height: 100px;
-  margin-top: 10px;
 }
 
 .menu .container .serviceBx .imgBx img:hover {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   transition: 0.5s;
 }
 
