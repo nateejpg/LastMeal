@@ -534,7 +534,7 @@ header.sticky .logo img {
   align-items: center;
   text-align: center;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .contact::before {
@@ -550,12 +550,19 @@ header.sticky .logo img {
 }
 
 .contact .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   position: relative;
   text-align: center;
+  height: 100%;
+  width: 100%;
+  gap: 30px;
 }
 
 .contact .content h3 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   padding-top: 2rem;
   color: #fff;
 }
@@ -563,24 +570,19 @@ header.sticky .logo img {
 .contact .content p {
   font-size: 1.5rem;
   color: #fff;
-  padding-top: 15px;
   text-align: center;
   width: 50%;
-  padding-left: 25%;
 }
 
-.contact .container {
-  padding-top: 50px;
-  position: relative;
-}
-
-.contact .container .contactBx {
+.contact .contactBx {
   width: 50%;
+  height: 100%;
   margin: 10px 0px;
   padding: 0% 25%;
+  z-index: 10000000;
 }
 
-.contact .container .contactBx input {
+.contact .contactBx input {
   height: 50px;
   background-color: transparent;
   border-bottom: 0.2rem var(--blue) solid;
@@ -590,7 +592,7 @@ header.sticky .logo img {
   font-size: 1.5rem;
 }
 
-.contact .container .contactBx textarea {
+.contact .contactBx textarea {
   height: 100px;
   background-color: transparent;
   border-bottom: 0.2rem var(--blue) solid;
@@ -605,42 +607,50 @@ header.sticky .logo img {
   color: #fff;
 }
 
-.contact .container .submitBx {
-  align-items: center;
+.contact .submitBx {
   border-radius: 20px;
-  padding-bottom: 30px;
   color: #00bff0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
 }
 
-.contact .container .submitBx input:hover {
+.contact .submitBx input:hover {
   background-color: var(--blue);
   transition: 0.5;
   width: 300px;
   transition: 0.5s;
   height: 60px;
+  z-index: 1000;
 }
 
-.contact .container .submitBx input {
+.contact .submitBx input {
   cursor: pointer;
   border-radius: 20px;
   width: 200px;
   height: 50px;
+  background-color: #fff;
+  color: black;
+  border: 1px;
 }
 
-.contact .container .links {
+.contact .linkBx {
+  display: flex;
+  width: 100%;
+}
+
+.contact .links {
   position: relative;
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-.contact .container .links .linksBx {
-  width: fit-content;
-}
-
-.contact .container .links img {
+.contact .links img {
   width: 70px;
   height: 70px;
   filter: invert(1);
@@ -1078,5 +1088,36 @@ header.sticky .logo img {
     width: 100%;
     padding-left: 0;
     font-size: 1rem;
+  }
+
+  .contact .links img {
+    width: 50px;
+    height: 50px;
+    filter: invert(1);
+    padding: 0px 10px;
+    cursor: pointer;
+  }
+
+  .contact .submitBx input {
+    cursor: pointer;
+    border-radius: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: #fff;
+    color: black;
+    border: 1px;
+  }
+
+  .contact .submitBx {
+    padding-top: 10px;
+  }
+
+  .contact .submitBx input:hover {
+    background-color: var(--blue);
+    transition: 0.5;
+    width: 200px;
+    transition: 0.5s;
+    height: 40px;
+    z-index: 1000;
   }
 }
