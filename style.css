@@ -702,7 +702,7 @@ header.sticky .logo img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100%;
+    width: 95%;
     height: 250px;
     padding: 100px;
     text-align: center;
